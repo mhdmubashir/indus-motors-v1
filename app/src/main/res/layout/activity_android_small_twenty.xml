@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidSmallTwentyVM" type="com.indusv.app.modules.androidsmalltwenty.data.viewmodel.AndroidSmallTwentyVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearAndroidSmall"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowicons8logouttwo"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleindigo_300">
+                <ImageView android:id="@+id/imageIcons8logoutTwo"
+                    android:layout_height="@dimen/_26pxh"
+                    android:layout_marginBottom="@dimen/_23pxv"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_22pxv"
+                    android:layout_width="@dimen/_26pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_icons8logout2"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_icons8logout2"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtINDUSMOTORS"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_19pxv"
+                    android:layout_marginEnd="@dimen/_87pxh"
+                    android:layout_marginStart="@dimen/_42pxh"
+                    android:layout_marginTop="@dimen/_21pxv"
+                    android:layout_weight="0.88"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{androidSmallTwentyVM.androidSmallTwentyModel.txtINDUSMOTORS}"
+                    style="@style/txtInterregular24" tools:text="@string/lbl_indus_motors2"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtSorrycurrently"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_49pxh"
+            android:layout_marginStart="@dimen/_49pxh"
+            android:layout_marginTop="@dimen/_190pxv"
+            android:layout_width="match_parent"
+            android:text="@{androidSmallTwentyVM.androidSmallTwentyModel.txtSorrycurrently}"
+            style="@style/txtInterregular24_2" tools:text="@string/msg_sorry_currently"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnFeedbacks"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_242pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_21pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_21pxv" android:singleLine="true"
+            android:text="@string/lbl_feedbacks"
+            android:textAllCaps="false" style="@style/btnSolid_7" tools:text="@string/lbl_feedbacks"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidSmallTwentyoneVM" type="com.indusv.app.modules.androidsmalltwentyone.data.viewmodel.AndroidSmallTwentyoneVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearAndroidSmall"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end" android:id="@+id/txtLanguage"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_55pxh"
+            android:layout_marginStart="@dimen/_55pxh"
+            android:layout_marginTop="@dimen/_147pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{androidSmallTwentyoneVM.androidSmallTwentyoneModel.txtLanguage}"
+            style="@style/txtIntermedium32" tools:text="@string/lbl_admin2"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtAdminId"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_55pxh"
+            android:layout_marginStart="@dimen/_55pxh"
+            android:layout_marginTop="@dimen/_48pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{androidSmallTwentyoneVM.androidSmallTwentyoneModel.txtAdminId}"
+            style="@style/txtInterregular15" tools:text="@string/lbl_admin_id"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_bluegray_101"
+            android:ellipsize="end" android:hint="@string/lbl_enter_id"
+            android:id="@+id/etGroupFortyTwo" android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_48pxh"
+            android:layout_marginStart="@dimen/_55pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_8pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_8pxv" android:singleLine="true"
+            android:text="@={androidSmallTwentyoneVM.androidSmallTwentyoneModel.etGroupFortyTwoValue}"
+            android:textColorHint="@color/black_900_7f"
+            style="@style/etSolid" tools:ignore="Autofill"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtPassword"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_55pxh"
+            android:layout_marginStart="@dimen/_55pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{androidSmallTwentyoneVM.androidSmallTwentyoneModel.txtPassword}"
+            style="@style/txtInterregular15" tools:text="@string/lbl_password"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_bluegray_101"
+            android:ellipsize="end"
+            android:hint="@string/msg_enter_your_pass"
+            android:id="@+id/etGroupFortyOne"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_48pxh"
+            android:layout_marginStart="@dimen/_55pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_7pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_9pxv" android:singleLine="true"
+            android:text="@={androidSmallTwentyoneVM.androidSmallTwentyoneModel.etGroupFortyOneValue}"
+            android:textColorHint="@color/black_900_7f"
+            style="@style/etSolid" tools:ignore="Autofill"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnLogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_33pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_55pxh"
+            android:layout_marginStart="@dimen/_55pxh"
+            android:layout_marginTop="@dimen/_49pxv"
+            android:layout_width="@dimen/_137pxh"
+            android:paddingBottom="@dimen/_6pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_6pxv" android:singleLine="true"
+            android:text="@string/lbl_login" android:textAllCaps="false"
+            style="@style/btnSolid_8" tools:text="@string/lbl_login"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidSmallSevenVM" type="com.indusv.app.modules.androidsmallseven.data.viewmodel.AndroidSmallSevenVM"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearAndroidSmall"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowicons8backtwentyfour"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleindigo_300">
+                <ImageView android:id="@+id/imageIcons8backTwentyFour"
+                    android:layout_height="@dimen/_33pxh"
+                    android:layout_marginBottom="@dimen/_27pxv"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_marginTop="@dimen/_27pxv"
+                    android:layout_width="@dimen/_36pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_icons8back24"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_icons8back24"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtINDUSMOTORS"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_28pxv"
+                    android:layout_marginEnd="@dimen/_88pxh"
+                    android:layout_marginStart="@dimen/_29pxh"
+                    android:layout_marginTop="@dimen/_28pxv"
+                    android:layout_weight="0.84"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{androidSmallSevenVM.androidSmallSevenModel.txtINDUSMOTORS}"
+                    style="@style/txtInterregular24" tools:text="@string/lbl_indus_motors2"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView android:id="@+id/imageEllipseOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_54pxh"
+            android:layout_marginEnd="@dimen/_45pxh"
+            android:layout_marginStart="@dimen/_45pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="@dimen/_56pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_ellipse1}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse1"/>
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtSorryuserdeta"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_45pxh"
+            android:layout_marginStart="@dimen/_45pxh"
+            android:layout_marginTop="@dimen/_103pxv"
+            android:layout_width="match_parent"
+            android:text="@{androidSmallSevenVM.androidSmallSevenModel.txtSorryuserdeta}"
+            style="@style/txtInterregular20_1" tools:text="@string/msg_sorry_user_deta"/>
+        <LinearLayout android:id="@+id/linearRowhome"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_243pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStyleindigo_300">
+            <TextView android:ellipsize="end" android:id="@+id/txtHome"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_21pxv"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_weight="0.29" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{androidSmallSevenVM.androidSmallSevenModel.txtHome}"
+                style="@style/txtInterregular24" tools:text="@string/lbl_home"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFeedback"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_21pxv"
+                android:layout_marginStart="@dimen/_37pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_weight="0.48" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{androidSmallSevenVM.androidSmallSevenModel.txtFeedback}"
+                style="@style/txtInterregular24" tools:text="@string/lbl_feedback"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtUser"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_21pxv"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_weight="0.23" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{androidSmallSevenVM.androidSmallSevenModel.txtUser}"
+                style="@style/txtInterregular24" tools:text="@string/lbl_user"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidSmallThreeVM" type="com.indusv.app.modules.androidsmallthree.data.viewmodel.AndroidSmallThreeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameAndroidSmall"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnsignin"
+            android:layout_gravity="bottom|center"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_49pxh"
+            android:layout_marginStart="@dimen/_49pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtSignin"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtSignin}"
+                style="@style/txtInterregular32" tools:text="@string/lbl_sign_in"/>
+            <FrameLayout android:id="@+id/frameStackcustomerid"
+                android:layout_height="@dimen/_19pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_45pxv" android:layout_width="@dimen/_87pxh">
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtCustomerId"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtCustomerId}"
+                    style="@style/txtInterregular15" tools:text="@string/lbl_customer_id"/>
+                <FrameLayout android:id="@+id/frameStackcustomeridOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_19pxv" android:layout_width="@dimen/_87pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtCustomerIdOne"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtCustomerIdOne}"
+                        style="@style/txtInterregular15" tools:text="@string/lbl_customer_id"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtCustomerIdTwo"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtCustomerIdTwo}"
+                        style="@style/txtInterregular15" tools:text="@string/lbl_customer_id"/>
+                </FrameLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackgroupfiftysix"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_32pxv"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_257pxh">
+                <FrameLayout android:id="@+id/frameStackentercustomer"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_15pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_98pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtEntercustomer"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtEntercustomer}"
+                        style="@style/txtInterlight12" tools:text="@string/msg_enter_customer"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtEntercustomerOne"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtEntercustomerOne}"
+                        style="@style/txtInterlight12" tools:text="@string/msg_enter_customer"/>
+                </FrameLayout>
+                <EditText
+                    android:background="@drawable/rectangle_bg_bluegray_101"
+                    android:ellipsize="end"
+                    android:hint="@string/msg_enter_customer"
+                    android:id="@+id/etGroupFiftySix"
+                    android:inputType="text"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_7pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_11pxh"
+                    android:paddingTop="@dimen/_9pxv"
+                    android:singleLine="true"
+                    android:text="@={androidSmallThreeVM.androidSmallThreeModel.etGroupFiftySixValue}"
+                    android:textColorHint="@color/black_900_7f"
+                    style="@style/etSolid" tools:ignore="Autofill"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackpassword"
+                android:layout_height="@dimen/_19pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_22pxv" android:layout_width="@dimen/_70pxh">
+                <TextView android:ellipsize="end"
+                    android:gravity="top|start"
+                    android:id="@+id/txtPassword"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtPassword}"
+                    style="@style/txtInterregular15" tools:text="@string/lbl_password"/>
+                <FrameLayout android:id="@+id/frameStackpasswordOne"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_19pxv" android:layout_width="@dimen/_70pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtPasswordOne"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtPasswordOne}"
+                        style="@style/txtInterregular15" tools:text="@string/lbl_password"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtPasswordTwo"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtPasswordTwo}"
+                        style="@style/txtInterregular15" tools:text="@string/lbl_password"/>
+                </FrameLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackgroupfiftyfive"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_32pxv"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_6pxv" android:layout_width="@dimen/_257pxh">
+                <FrameLayout android:id="@+id/frameStackenteryourpass"
+                    android:layout_gravity="bottom|start"
+                    android:layout_height="@dimen/_15pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginStart="@dimen/_11pxh"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_114pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtEnteryourpass"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtEnteryourpass}"
+                        style="@style/txtInterlight12" tools:text="@string/msg_enter_your_pass"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtEnteryourpassOne"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtEnteryourpassOne}"
+                        style="@style/txtInterlight12" tools:text="@string/msg_enter_your_pass"/>
+                </FrameLayout>
+                <EditText
+                    android:background="@drawable/rectangle_bg_bluegray_101"
+                    android:ellipsize="end"
+                    android:hint="@string/msg_enter_your_pass"
+                    android:id="@+id/etGroupFiftyFive"
+                    android:inputType="textPassword"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_7pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_11pxh"
+                    android:paddingTop="@dimen/_9pxv"
+                    android:singleLine="true"
+                    android:text="@={androidSmallThreeVM.androidSmallThreeModel.etGroupFiftyFiveValue}"
+                    android:textColorHint="@color/black_900_7f"
+                    style="@style/etSolid" tools:ignore="Autofill"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/frameStackloginTwo"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_33pxv"
+                android:layout_marginEnd="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_27pxv" android:layout_width="@dimen/_137pxh">
+                <FrameLayout android:id="@+id/frameStacklogin"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_20pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_46pxh"
+                    android:layout_marginStart="@dimen/_46pxh"
+                    android:layout_marginTop="@dimen/_10pxv" android:layout_width="@dimen/_42pxh">
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtLogin"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtLogin}"
+                        style="@style/txtInterregular16" tools:text="@string/lbl_login"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="top|start"
+                        android:id="@+id/txtLoginOne"
+                        android:layout_gravity="start"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{androidSmallThreeVM.androidSmallThreeModel.txtLoginOne}"
+                        style="@style/txtInterregular16" tools:text="@string/lbl_login"/>
+                </FrameLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnLoginTwo"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_6pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_6pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_login"
+                    android:textAllCaps="false"
+                    style="@style/btnSolid_5" tools:text="@string/lbl_login"/>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerListlanguage"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_48pxh"
+                android:layout_marginTop="@dimen/_79pxv"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_5pxh}" tools:itemCount="2" tools:listitem="@layout/row_listlanguage"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

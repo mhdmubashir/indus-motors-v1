@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.indusv.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.indusv.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.indusv.app.modules.androidsmallthirteen.ui.AndroidSmallThirteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmallseven.ui.AndroidSmallSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmalltwenty.ui.AndroidSmallTwentyActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.indusv.app.modules.androidsmalleighteen.ui.AndroidSmallEighteenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.indusv.app.modules.androidsmalltwelve.ui.AndroidSmallTwelveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmallfour.ui.AndroidSmallFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmallfifteen.ui.AndroidSmallFifteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmallsix.ui.AndroidSmallSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmalleleven.ui.AndroidSmallElevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmallsixteen.ui.AndroidSmallSixteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmalleight.ui.AndroidSmallEightActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmallthree.ui.AndroidSmallThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmallnine.ui.AndroidSmallNineActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmalltwo.ui.AndroidSmallTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmalltwentyone.ui.AndroidSmallTwentyoneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmallfourteen.ui.AndroidSmallFourteenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.indusv.app.modules.androidsmallten.ui.AndroidSmallTenActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidSmallFourteenVM" type="com.indusv.app.modules.androidsmallfourteen.data.viewmodel.AndroidSmallFourteenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAndroidSmall"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar android:gravity="start"
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" app:contentInsetStart="0dp">
+            <LinearLayout
+                android:id="@+id/linearRowicons8backtwentyfour"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleindigo_300">
+                <ImageView android:id="@+id/imageIcons8backTwentyFour"
+                    android:layout_height="@dimen/_33pxh"
+                    android:layout_marginBottom="@dimen/_13pxv"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="@dimen/_36pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_icons8back24"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_icons8back24"/>
+                <ImageView android:id="@+id/imageIcons8homeTwentyFour"
+                    android:layout_height="@dimen/_29pxh"
+                    android:layout_marginBottom="@dimen/_17pxv"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_247pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="@dimen/_31pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_icons8home24"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_icons8home24"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtThirtyFive"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{androidSmallFourteenVM.androidSmallFourteenModel.txtThirtyFive}"
+            style="@style/txtInterregular16" tools:text="@string/lbl_3_5"/>
+        <TextView android:gravity="end"
+            android:id="@+id/txtHowsatisfieda"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_19pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent"
+            android:text="@{androidSmallFourteenVM.androidSmallFourteenModel.txtHowsatisfieda}"
+            style="@style/txtInterregular14" tools:text="@string/msg_how_satisfied_a"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnVerySatisfied"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_34pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_very_satisfied"
+            android:textAllCaps="false" style="@style/btnSolid_3" tools:text="@string/lbl_very_satisfied"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnSatisfied"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_satisfied"
+            android:textAllCaps="false" style="@style/btnSolid_3" tools:text="@string/lbl_satisfied"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnNeutral"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_neutral"
+            android:textAllCaps="false" style="@style/btnSolid_3" tools:text="@string/lbl_neutral"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnDissatisfied"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_dissatisfied"
+            android:textAllCaps="false" style="@style/btnSolid_3" tools:text="@string/lbl_dissatisfied"/>
+        <LinearLayout android:id="@+id/linearRowhome"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_126pxv"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStyleindigo_300">
+            <TextView android:ellipsize="end" android:id="@+id/txtHome"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_21pxv"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_weight="0.29" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{androidSmallFourteenVM.androidSmallFourteenModel.txtHome}"
+                style="@style/txtInterregular24" tools:text="@string/lbl_home"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtFeedback"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_21pxv"
+                android:layout_marginStart="@dimen/_37pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_weight="0.48" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{androidSmallFourteenVM.androidSmallFourteenModel.txtFeedback}"
+                style="@style/txtInterregular24" tools:text="@string/lbl_feedback"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtUser"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_21pxv"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_21pxv"
+                android:layout_weight="0.23" android:layout_width="0dp"
+                android:singleLine="true"
+                android:text="@{androidSmallFourteenVM.androidSmallFourteenModel.txtUser}"
+                style="@style/txtInterregular24" tools:text="@string/lbl_user"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

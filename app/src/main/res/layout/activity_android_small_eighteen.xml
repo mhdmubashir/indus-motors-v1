@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="androidSmallEighteenVM" type="com.indusv.app.modules.androidsmalleighteen.data.viewmodel.AndroidSmallEighteenVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAndroidSmall"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <TextView android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:id="@+id/txtLanguage"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_84pxh"
+            android:layout_marginStart="@dimen/_91pxh"
+            android:layout_marginTop="@dimen/_167pxv"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{androidSmallEighteenVM.androidSmallEighteenModel.txtLanguage}"
+            style="@style/txtInterregular36" tools:text="@string/lbl_welcome"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnUser"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_89pxh"
+            android:layout_marginStart="@dimen/_91pxh"
+            android:layout_marginTop="@dimen/_59pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@string/lbl_user" android:textAllCaps="false"
+            style="@style/btnSolid" tools:text="@string/lbl_user"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnAdmin"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_91pxh"
+            android:layout_marginStart="@dimen/_91pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_5pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_5pxv" android:singleLine="true"
+            android:text="@string/lbl_admin" android:textAllCaps="false"
+            style="@style/btnSolid_1" tools:text="@string/lbl_admin"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtIndusmotors"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_91pxh"
+            android:layout_marginStart="@dimen/_91pxh"
+            android:layout_marginTop="@dimen/_191pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{androidSmallEighteenVM.androidSmallEighteenModel.txtIndusmotors}"
+            style="@style/txtInterregular20" tools:text="@string/lbl_indusmotors"/>
+    </LinearLayout>
+</layout>

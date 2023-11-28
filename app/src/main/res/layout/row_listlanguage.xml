@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listlanguageRowModel" type="com.indusv.app.modules.androidsmallthree.data.model.ListlanguageRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStacklanguage"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_119pxh">
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtLanguage" android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listlanguageRowModel.txtLanguage}"
+            style="@style/txtInterregular13" tools:text="@string/msg_create_an_accou"/>
+        <FrameLayout android:id="@+id/frameStacklanguageOne"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_16pxv" android:layout_width="@dimen/_119pxh">
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtLanguageOne"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listlanguageRowModel.txtLanguageOne}"
+                style="@style/txtInterregular13" tools:text="@string/msg_create_an_accou"/>
+            <TextView android:ellipsize="end"
+                android:gravity="top|start"
+                android:id="@+id/txtLanguageTwo"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listlanguageRowModel.txtLanguageTwo}"
+                style="@style/txtInterregular13" tools:text="@string/msg_create_an_accou"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>
